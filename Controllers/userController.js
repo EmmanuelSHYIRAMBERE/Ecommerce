@@ -20,8 +20,6 @@ const registerUser = async (req, res) => {
 const getUsers = async (req, res) => {
   const Users = await User.find({});
 
-  console.log("newUser", Users);
-
   res.status(201).json({
     message: "Success",
     Users,
